@@ -1,0 +1,21 @@
+/* color: #2196F3  лого1
+color: #000000 лого 2
+color: #212121 навигация и заголоаки 2
+color: #757575 контакты параграф
+color: #FFFFFF герой
+
+
+ */
+
+body {
+  background-color: #ffffff;
+}
+
+.logo {
+  text-decoration: none;
+
+  color: #000000;
+}
+.logo-one {
+  color: #2196f3;
+}
