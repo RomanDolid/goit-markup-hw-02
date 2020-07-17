@@ -1,21 +1,130 @@
-/* color: #2196F3  лого1
-color: #000000 лого 2
-color: #212121 навигация и заголоаки 2
-color: #757575 контакты параграф
-color: #FFFFFF герой
-
-
- */
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --accent-futer-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --beck-btn-portfolio: #f5f4fa;
+  --beck-link-portfolio: rgba(33, 150, 243, 0.9);
+}
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 }
 
 .logo {
+  color: var(--logo-color);
   text-decoration: none;
-
-  color: #000000;
 }
-.logo-one {
-  color: #2196f3;
+.logo .first-word {
+  color: var(--accent-color);
+}
+
+.site-nav .link,
+.team .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.site-nav .logo:hover,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contakts .link:hover,
+.contakts .link:focus,
+.futer-nav .logo:hover {
+  color: var(--accent-color);
+}
+
+.contakts .link {
+  color: var(--title-text-color);
+
+  text-decoration: none;
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--title-text-color);
+}
+
+.hero .link {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  text-decoration: none;
+}
+
+.advantage .text {
+  color: var(--title-text-color);
+}
+
+.operations .text {
+  color: var(--primary-white-color);
+  background-color: var(--title-text-color);
+}
+
+.team .text {
+  color: var(--title-text-color);
+}
+
+.team .link:hover,
+.clients .link:hover,
+.futer-link .link:hover {
+  background-color: var(--accent-color);
+}
+.futer-nav {
+  background-color: var(--title-text-color);
+}
+.futer-nav {
+  color: var(--primary-white-color);
+}
+.futer-nav .logo,
+.futer-nav .adress {
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.futer-nav .link {
+  color: var(--accent-futer-color);
+}
+
+.futer-link .link {
+  text-decoration: none;
+}
+
+.btn {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Portfolio */
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+.btn-portfolio {
+  color: var(--primary-text-color);
+  background-color: var(--beck-btn-portfolio);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio .link {
+  text-decoration: none;
+}
+
+.portfolio .title {
+  color: var(--primary-text-color);
+}
+.portfolio .desc {
+  color: var(--title-text-color);
+}
+.portfolio .text {
+  color: var(--primary-white-color);
+  background-color: var(--beck-link-portfolio);
 }
